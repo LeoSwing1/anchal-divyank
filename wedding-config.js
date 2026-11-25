@@ -150,60 +150,6 @@ window.WEDDING_CONFIG = {
           }
         }
       ]
-    }
-  ]
-    {
-      "id": "wedding",
-      "name": {
-        "en": "Wedding celebrations",
-        "hi": "विवाह समारोह"
-      },
-      "date": "2026-12-11",
-      "start": "17:00",
-      "end": null,
-      "theme": "baarat",
-      "venue": {
-        "en": "Hotel Saffron Leaf, Dehradun",
-        "hi": "होटल सैफ्रन लीफ, देहरादून"
-      },
-      "tagline": {
-        "en": "Vivah Sanskar — Shubh Lagnanusar",
-        "hi": "विवाह संस्कार — शुभ लग्नानुसार"
-      },
-      "program": [
-        {
-          "time": "17:00",
-          "title": {
-            "en": "Reception of Barat",
-            "hi": "बारात का स्वागत"
-          }
-        },
-        {
-          "time": "18:00",
-          "title": {
-            "en": "Lagan",
-            "hi": "लगन"
-          }
-        },
-        {
-          "time": "19:00",
-          "title": {
-            "en": "Dinner",
-            "hi": "भोज"
-          }
-        },
-        {
-          "time": null,
-          "timeLabel": {
-            "en": "Shubh Lagnanusar",
-            "hi": "शुभ लग्नानुसार"
-          },
-          "title": {
-            "en": "Vivah Sanskar",
-            "hi": "विवाह संस्कार"
-          }
-        }
-      ]
     },
     {
       "id": "vidai",
@@ -249,8 +195,6 @@ window.WEDDING_CONFIG = {
   },
   "music": {
     "file": "assets/music/din-shagna-da-instrumental.mp3",
-    "start": 0,
-    "preload": "auto",
-    "volume": 0.5
+    "start": 0
   }
 };
