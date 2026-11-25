@@ -8,12 +8,15 @@ Run locally: `python3 -m http.server 8000` in this folder, open http://localhost
 1. Upload this whole folder to Netlify / Vercel / Cloudflare Pages, or to `public_html`
    on cPanel hosting. Caching rules for all three are already included
    (`_headers`, `vercel.json`, `.htaccess`).
-2. Stamp your live domain into the link-preview tags — **required**, WhatsApp needs
-   absolute URLs and the preview card will not appear until you do this:
+2. The link-preview tags are already stamped for **anchal-divyank.vercel.app**.
+   If you move to a different address, re-stamp them — replace the example below with
+   the address guests actually open, not a placeholder. WhatsApp needs absolute URLs,
+   and the preview card will not appear if this is wrong:
 
-       python3 set-domain.py your-domain.com
+       python3 set-domain.py anchal-divyank.vercel.app
 
-3. If you share the link before step 2, re-scrape it at
+3. WhatsApp caches a link's preview the first time anyone sends it. After deploying,
+   re-scrape once at
    https://developers.facebook.com/tools/debug/ to clear WhatsApp's cached preview.
 
 ## Link preview

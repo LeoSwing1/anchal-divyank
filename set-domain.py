@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Stamp your live domain into the link-preview tags.
 
-    python3 set-domain.py anchal-divyank.netlify.app
+    python3 set-domain.py anchal-divyank.vercel.app
+
+Use your real address, not a placeholder.
 
 Run this once after deploying. WhatsApp and Facebook need absolute URLs,
 so the preview card will not appear until this is done.
@@ -15,6 +17,12 @@ def main():
     d = re.sub(r'^https?://', '', d)
     if not re.match(r'^[A-Za-z0-9.-]+\.[A-Za-z]{2,}(/.*)?$', d):
         print(f"'{d}' does not look like a domain."); return 1
+    BAD = ('your-domain.com', 'yourdomain.com', 'example.com', 'site_url',
+           'your-site.com', 'domain.com')
+    if d.lower() in BAD:
+        print(f"'{d}' is the placeholder from the instructions, not your site.")
+        print("Use the address guests will actually open, e.g. anchal-divyank.vercel.app")
+        return 1
     p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'index.html')
     s = io.open(p, encoding='utf-8').read()
     if 'SITE_URL' not in s:
