@@ -18,10 +18,11 @@ Run locally: `python3 -m http.server 8000` in this folder, open http://localhost
 
 ## Link preview
 
-`og-preview.jpg` (1200×630) is the card shown when the link is pasted into WhatsApp,
-Instagram DMs, iMessage or Facebook. It is built from this project's own Ganesha and
-divider artwork, so it matches the invitation. To change it, replace the file and keep
-the same name and dimensions.
+`og-preview.jpg` (1200×630) is the card shown when the link is pasted or forwarded in
+WhatsApp, Instagram DMs, iMessage or Facebook. It is composed from the invitation's own
+rendered artwork — the jhalar toran, the jewelled mandala and the star frieze are the
+same canvas ornaments the site draws — so the preview and the page match exactly.
+To change it, replace the file, keeping the name and the 1200×630 dimensions.
 
 The page is `noindex, nofollow` so it stays out of Google. That does not block WhatsApp
 or Facebook previews — those still work.
